@@ -1,0 +1,172 @@
+:root{
+    --background-color:rgb(6,11,25);
+    --border-color:rgb(255,255,255,0.1);
+}
+
+*{
+    margin:0;
+    padding:0;
+
+}
+h1{
+    color:white;
+    text-align:center;
+}
+body{
+    background-color: var(--background-color);
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+    margin:0px;
+    overflow: hidden;
+}
+nav {
+    display:flex;
+    width:100%;
+    border-bottom: 1px solid var(--border-color);
+    color:white;
+}
+nav > ul > li{
+    display:inline;
+    float : right;
+    padding: 10px 100px 0px 100px;
+}
+nav >.right{
+    display:inline;
+    float:right;
+
+}
+
+main{
+    flex-grow:1;
+}
+main >article{
+    display:grid;
+    height:100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+
+}
+main >article>.artist{
+    height: 100%;
+   
+}
+a{
+   border-radius:10px;
+   border:var(--border-color);
+   text-decoration:none;
+   color:white;
+   transition-duration:0.5s;
+
+}
+a:hover{
+    transform:scale(1.1);
+    color:rgb(24, 184, 224);
+}
+main > article >.artist-description,
+main> article >.artist-nav-section{
+    border:1px solid var(--border-color);
+}
+main > article >.artist-image,
+main> article >.artist-title{
+    border:1px solid var(--border-color);
+}
+
+main> article >.artist-image{
+    background-image:url("Download epic reflective space mask HD wallpaper.jpg");
+    background-size:cover;
+    position: relative;
+    background-position:center;
+    overflow:hidden;
+    transition:0.5s;
+
+
+}
+.mau{
+    text-align:center;
+    color:rgb(150, 179, 21);
+    opacity:0;
+}
+
+
+main> article >.artist-image:hover{
+
+    transform:scale(1.01);
+    background-image:url("Travis Scott on Amazon Music.jpg");
+    
+    
+}
+main> article >.artist-description{
+    background-image: url("Outer Space Wallpapers   Full HD Desktop Backgrounds.jpg");
+    background-size:cover;
+    position:relative;
+    background-position: center;
+    text-align: center;
+    color:rgb(13, 194, 194);
+    transition:200ms ease-in-out;
+    overflow:hidden;
+    
+}
+.content{
+    opacity:0;
+    transition:500ms;
+
+}
+.content:hover{
+    opacity:1;
+    transform:scale(1.01);
+}
+main> article >.artist-description:hover{
+    transform:scale(1.01);
+}
+main>article>.artist-title{
+    background-image:url("hd 4k space wallpaper HD Wallpaper Backgrounds Tumblr Backgrounds.jpg");
+    background-size:cover;
+    position:relative;
+    background-position:center;
+    text-align: center;
+    color:rgb(13, 194, 194);
+    font-size:20px;
+
+}
+main> article >.artist-title:hover{
+    transform:scale(1.01);
+
+}
+.shop{
+    float:center;
+    border-radius:50%;
+    margin:20px;
+    background-color:rgb(255, 255, 255);
+    transition:0.5s;
+    opacity:0;
+}
+.shop:hover{
+    transform:scale(1.5);
+    opacity:1;
+}
+.image__overlay{
+    opacity:0;
+    transition:0.5s;
+}
+
+.image__overlay:hover{
+    opacity:1;
+    transform:scale(1.01);
+}
+.artist-nav-section
+{
+    background-image:url("458325.jpg");
+    position:relative;
+    background-size:cover;
+    background-position:center;
+}
+.new-release{
+     opacity:0;
+     transition:0.5s;
+     
+}
+.new-release:hover{
+    opacity:1;
+    transform:scale(1.01);
+}
